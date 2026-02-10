@@ -1,5 +1,8 @@
+@import "tailwindcss";
+
 :root {
-  --primary: #c41e3a; /* Deep Red/Scarlet from Design Cafe */
+  --primary: #c41e3a;
+  /* Deep Red/Scarlet from Design Cafe */
   --primary-dark: #a0182f;
   --secondary: #2c3e50;
   --accent: #f39c12;
@@ -27,7 +30,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
   color: var(--secondary);
@@ -119,6 +127,7 @@ button {
   .container {
     padding: 0 1rem;
   }
+
   .section {
     padding: 3.5rem 0;
   }
