@@ -1,5 +1,5 @@
 {
-  "name": "design-cafe-clone",
+  "name": "kryoss-interior",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,11 +12,13 @@
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
     "@fontsource/outfit": "^5.2.8",
+    "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.34.0",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^6.30.3"
+    "react-router-dom": "^6.30.3",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
