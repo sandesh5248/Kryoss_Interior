@@ -1,0 +1,212 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--secondary);
+    /* Dark blue/slate */
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.accent-text {
+    color: var(--primary);
+    /* Red/Pink */
+}
+
+/* Navigation Links Container */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    height: 100%;
+}
+
+/* Links and Dropdown Triggers */
+.nav-link-text,
+.nav-item-dropdown {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #008080;
+    /* Teal color as seen in screenshot */
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    padding: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.nav-link-text:hover,
+.nav-item-dropdown:hover>.nav-link-text {
+    color: var(--primary);
+}
+
+/* Dropdown Menu */
+.nav-item-dropdown {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 220px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    padding: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    border-top: 2px solid var(--primary);
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: var(--text);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--surface);
+    color: var(--primary);
+    padding-left: 1.8rem;
+    /* Slide effect */
+}
+
+/* Mobile Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-link-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: var(--transition);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav-item-dropdown,
+    .nav-link-text {
+        width: 100%;
+        padding: 1rem 2rem;
+        height: auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        justify-content: space-between;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+        /* Hide by default on mobile */
+        padding-left: 2rem;
+        background: var(--surface);
+        border: none;
+    }
+
+    /* Simple hover for mobile won't work perfectly, usually requires click. 
+       For this clone, we'll let it show on hover or verify logic. 
+       Let's just show it always or change structure if needed. 
+       For now, let's allow hover to show it on mobile too or just keep it simple. */
+    .nav-item-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .mobile-only {
+        display: flex;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
