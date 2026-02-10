@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 import { Heart, Home, DollarSign, Award } from 'lucide-react';
 import '../components/Features.css';
 
-const WhyDesignCafe = () => {
+const About = () => {
     return (
         <div className="page-container" style={{ paddingTop: '6rem' }}>
             <div className="hero section" style={{ height: '60vh', backgroundPosition: 'center', backgroundImage: 'url(https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1600&q=80)' }}>
                 <div className="hero-overlay"></div>
                 <div className="container hero-content text-center">
-                    <h1>Why <span className="accent-text">DesignCafe</span>?</h1>
+                    <h1>Why <span className="accent-text">KryossInterior</span>?</h1>
                     <p className="section-subtitle" style={{ color: 'white' }}>Real Homes, For Real People - Like You</p>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const WhyDesignCafe = () => {
                     >
                         <div className="feature-icon"><Heart size={40} /></div>
                         <h3>It’s Your Sanctuary. It’s Personal.</h3>
-                        <p>India is home to a wonderful diversity of regions and customs, and 1.3 billion unique individuals. Your DesignCafe home is personalised for whatever makes you, uniquely you. Why should your home be cut from a template, when you’re not?</p>
+                        <p>India is home to a wonderful diversity of regions and customs, and 1.3 billion unique individuals. Your KryossInterior home is personalised for whatever makes you, uniquely you. Why should your home be cut from a template, when you’re not?</p>
                     </motion.div>
                     <div className="img-block">
                         <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80" alt="Personalized Home" style={{ width: '100%', borderRadius: '20px' }} />
@@ -76,4 +76,4 @@ const WhyDesignCafe = () => {
     );
 };
 
-export default WhyDesignCafe;
+export default About;

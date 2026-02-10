@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className={navClass}>
       <div className="container nav-content">
         <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
-          <span className="logo-text">Design<span className="accent-text">Cafe</span></span>
+          <span className="logo-text">Kryoss<span className="accent-text">Interior</span></span>
         </Link>
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
@@ -78,16 +78,16 @@ const Navbar = () => {
           ]} />
 
           <NavDropdown title="Cities" items={[
-            { label: 'Bengaluru', path: '/experience-centres' },
-            { label: 'Mumbai', path: '/experience-centres' },
-            { label: 'Hyderabad', path: '/experience-centres' },
-            { label: 'Chennai', path: '/experience-centres' },
-            { label: 'Pune', path: '/experience-centres' },
-            { label: 'Mysore', path: '/experience-centres' }
+            { label: 'Bengaluru', path: '/experience-centres?city=Bengaluru' },
+            { label: 'Mumbai', path: '/experience-centres?city=Mumbai' },
+            { label: 'Hyderabad', path: '/experience-centres?city=Hyderabad' },
+            { label: 'Chennai', path: '/experience-centres?city=Chennai' },
+            { label: 'Pune', path: '/experience-centres?city=Pune' },
+            { label: 'Mysore', path: '/experience-centres?city=Mysore' }
           ]} />
 
           <NavDropdown title="More" items={[
-            { label: 'About Us', path: '/why-design-cafe' },
+            { label: 'About Us', path: '/about-us' },
             { label: 'Careers', path: '/careers' },
             { label: 'Partner Policy', path: '/partner-policy' },
             { label: 'Refer a Friend', path: '/refer-friend' }

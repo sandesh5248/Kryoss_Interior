@@ -8,7 +8,7 @@ const steps = [
     {
         id: "01",
         title: "Meet a designer",
-        desc: "Talk to a designer about your needs, dreams and budget. Get an instant estimate and book with DesignCafe by paying 10%.",
+        desc: "Talk to a designer about your needs, dreams and budget. Get an instant estimate and book with KryossInterior by paying 10%.",
         icon: <User size={40} />
     },
     {

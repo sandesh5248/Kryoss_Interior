@@ -18,6 +18,14 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar Container Override */
+.navbar .container {
+    max-width: 98%;
+    /* Use almost full width as requested */
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
 .nav-content {
     display: flex;
     justify-content: space-between;
@@ -44,16 +52,26 @@
 /* Navigation Links Container */
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 0;
+    /* Remove fixed gap, use justify-content */
     align-items: center;
     height: 100%;
+    flex: 1;
+    /* Take up remaining space */
+    justify-content: space-evenly;
+    /* Distribute items evenly */
+    margin-left: 2rem;
+    /* Add some separation from logo */
+    margin-right: 2rem;
+    /* Add some separation from CTA */
 }
 
-/* Links and Dropdown Triggers */
-.nav-link-text,
+/* Links and Dropdown Triggers (Top Level Items) */
+.nav-links>.nav-link-text,
 .nav-item-dropdown {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    /* Slightly reduced font size */
     font-weight: 500;
     color: #008080;
     /* Teal color as seen in screenshot */
@@ -67,9 +85,18 @@
     transition: color 0.2s;
 }
 
-.nav-link-text:hover,
-.nav-item-dropdown:hover>.nav-link-text {
+/* Shared hover state */
+.nav-links>.nav-link-text:hover,
+.nav-item-dropdown:hover {
     color: var(--primary);
+}
+
+/* Inner text of dropdown (prevent double padding/styles) */
+.nav-item-dropdown .nav-link-text {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font: inherit;
 }
 
 /* Dropdown Menu */

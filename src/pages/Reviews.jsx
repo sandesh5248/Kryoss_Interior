@@ -6,13 +6,13 @@ const reviews = [
     {
         name: "Priya Sharma",
         location: "Bren Imperia, Bengaluru",
-        text: "DesignCafe has made our flat into a home, a home which we always wanted. They understood us and gave us our dream home. The journey with them has been an amazing and smooth one for sure.",
+        text: "KryossInterior has made our flat into a home, a home which we always wanted. They understood us and gave us our dream home. The journey with them has been an amazing and smooth one for sure.",
         rating: 5
     },
     {
         name: "Rahul Verma",
         location: "Goregaon, Mumbai",
-        text: "I absolutely loved the work. I would definitely recommend DesignCafe to anyone. They are very professional and made the entire experience amazing. The best part is that they clearly understood our requirements and budget.",
+        text: "I absolutely loved the work. I would definitely recommend KryossInterior to anyone. They are very professional and made the entire experience amazing. The best part is that they clearly understood our requirements and budget.",
         rating: 5
     },
     {

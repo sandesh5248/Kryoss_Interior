@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Filter } from 'lucide-react';
 import '../components/Features.css';
@@ -16,6 +17,18 @@ const categories = ['All', 'Living Room', 'Kitchen', 'Bedroom', 'Kids Room', 'Wa
 
 const DesignGallery = () => {
     const [activeCategory, setActiveCategory] = useState('All');
+    const [searchParams] = useSearchParams();
+
+    useEffect(() => {
+        const cat = searchParams.get('cat');
+        if (cat && categories.includes(cat)) {
+            setActiveCategory(cat);
+        } else if (cat) {
+            // Special handling for URIs that might not match exact display text
+            const mappedCat = categories.find(c => c.toLowerCase() === cat.toLowerCase()) || 'All';
+            setActiveCategory(mappedCat);
+        }
+    }, [searchParams]);
 
     const filteredDesigns = activeCategory === 'All'
         ? designs

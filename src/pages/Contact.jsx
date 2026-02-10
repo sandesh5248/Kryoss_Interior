@@ -30,7 +30,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3>Email Us</h3>
-                                    <p>hello@designcafe.com</p>
+                                    <p>hello@kryossinterior.com</p>
                                     <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>We reply within 24 hours</p>
                                 </div>
                             </div>
