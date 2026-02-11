@@ -280,7 +280,9 @@ const Home = () => {
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.5rem', fontSize: '0.9rem', color: '#666' }}>
                                     <input type="checkbox" id="whatsapp" /> <label htmlFor="whatsapp">Enable WhatsApp updates</label>
                                 </div>
-                                <button className="btn btn-primary" style={{ width: '100%', padding: '1rem', fontSize: '1.1rem' }}>Get Free Quote</button>
+                                <div style={{ textAlign: 'center' }}>
+                                    <button className="btn btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.1rem' }}>Get Free Quote</button>
+                                </div>
                             </form>
                         </div>
                     </div>

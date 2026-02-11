@@ -14,7 +14,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="hero-text"
                 >
-                    <span className="hero-badge">India's Most Loved Interior Brand</span>
+
                     <h1>Home Interiors <br />Made <span className="accent-text">Easy</span></h1>
                     <p>Book a FREE consultation, get expert guidance from 400+ top designers, and relax as we handle everything from design to installation.</p>
                     <div className="hero-btns">

@@ -123,10 +123,7 @@ const Navbar = () => {
             { label: 'FAQs', path: '/faqs' }
           ]} />
 
-          <div className="nav-actions mobile-only">
-            <button className="nav-btn-icon"><Phone size={20} /></button>
-            <button className="nav-btn-icon"><User size={20} /></button>
-          </div>
+
         </div>
 
         <div className="nav-actions desktop-only">

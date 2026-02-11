@@ -24,6 +24,10 @@
     padding: 3rem 2rem;
     border-radius: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     transition: var(--transition);
     border: 1px solid rgba(0, 0, 0, 0.05);
