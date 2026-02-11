@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Home, DollarSign, Award } from 'lucide-react';
-import '../components/Features.css';
+import '../../components/Features.css';
 
 const About = () => {
     return (

@@ -45,11 +45,19 @@ const Navbar = () => {
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
 
           <NavDropdown title="Design Gallery" items={[
-            { label: 'All Designs', path: '/design-gallery' },
-            { label: 'Modular Kitchen', path: '/design-gallery?cat=Kitchen' },
-            { label: 'Living Room', path: '/design-gallery?cat=Living%20Room' },
-            { label: 'Bedroom', path: '/design-gallery?cat=Bedroom' },
-            { label: 'Kids Bedroom', path: '/design-gallery?cat=Kids%20Room' }
+            { label: 'Modular Kitchen Designs', path: '/design-gallery/modular-kitchen-designs' },
+            { label: 'Customise Your Kitchen', path: '/design-gallery/customise-your-kitchen' },
+            { label: 'Wardrobe Designs', path: '/design-gallery/wardrobe-designs' },
+            { label: 'Bedroom Designs', path: '/design-gallery/bedroom-designs' },
+            { label: 'Living Room Designs', path: '/design-gallery/living-room-designs' },
+            { label: 'Space Saving Designs', path: '/design-gallery/space-saving-designs' },
+            { label: 'Dining Room Designs', path: '/design-gallery/dining-room-designs' },
+            { label: 'Home Office Designs', path: '/design-gallery/home-office-designs' },
+            { label: 'Kids Bedroom Designs', path: '/design-gallery/kids-bedroom-designs' },
+            { label: 'Bathroom Designs', path: '/design-gallery/bathroom-designs' },
+            { label: '1 BHK Interior Designs', path: '/design-gallery/1-bhk-interior-designs' },
+            { label: '2 BHK Interior Designs', path: '/design-gallery/2-bhk-interior-designs' },
+            { label: '3 BHK Interior Designs', path: '/design-gallery/3-bhk-interior-designs' }
           ]} />
 
           <Link to="/projects" className="nav-link-text" onClick={() => setIsOpen(false)}>Recent Projects</Link>
@@ -68,13 +76,29 @@ const Navbar = () => {
           ]} />
 
           <NavDropdown title="Guides" items={[
-            { label: 'Interior Design Guides', path: '/guides' },
-            { label: 'Maintenance Guides', path: '/guides/maintenance' }
+            { label: 'Modular Kitchen Guides', path: '/guides/modular-kitchen-guides' },
+            { label: 'Bedroom Design Guides', path: '/guides/bedroom-design-guides' },
+            { label: 'Living Room Design Guides', path: '/guides/living-room-design-guides' },
+            { label: 'Dining Room Design Guides', path: '/guides/dining-room-design-guides' },
+            { label: 'Kids Room Design Guides', path: '/guides/kids-room-design-guides' },
+            { label: 'Study Room Design Guides', path: '/guides/study-room-design-guides' },
+            { label: 'Balcony Design Guides', path: '/guides/balcony-design-guides' },
+            { label: 'Bathroom Design Guides', path: '/guides/bathroom-design-guides' },
+            { label: 'Materials and Finishes', path: '/guides/materials-and-finishes' }
           ]} />
 
           <NavDropdown title="Blogs" items={[
-            { label: 'Design Trends', path: '/blogs/trends' },
-            { label: 'Home Tours', path: '/blogs/tours' }
+            { label: 'Modular Kitchen Interiors Ideas', path: '/blogs/modular-kitchen-interiors-ideas' },
+            { label: 'Home Interior Design Ideas', path: '/blogs/home-interior-design-ideas' },
+            { label: 'Bedroom Design Ideas', path: '/blogs/bedroom-design-ideas' },
+            { label: 'Living Room Design Ideas', path: '/blogs/living-room-design-ideas' },
+            { label: 'Dining Room Design Ideas', path: '/blogs/dining-room-design-ideas' },
+            { label: 'Kids Bedroom Design Ideas', path: '/blogs/kids-bedroom-design-ideas' },
+            { label: 'Study Room Design Ideas', path: '/blogs/study-room-design-ideas' },
+            { label: 'Home Decor Ideas', path: '/blogs/home-decor-ideas' },
+            { label: 'DC Home Tours', path: '/blogs/dc-home-tours' },
+            { label: 'DC Design Stars', path: '/blogs/dc-design-stars' },
+            { label: 'DC Updates', path: '/blogs/dc-updates' }
           ]} />
 
           <NavDropdown title="Cities" items={[
@@ -88,9 +112,15 @@ const Navbar = () => {
 
           <NavDropdown title="More" items={[
             { label: 'About Us', path: '/about-us' },
-            { label: 'Careers', path: '/careers' },
-            { label: 'Partner Policy', path: '/partner-policy' },
-            { label: 'Refer a Friend', path: '/refer-friend' }
+            { label: 'Videos', path: '/videos' },
+            { label: 'Why Kryoss Interior', path: '/why-kryoss-interior' },
+            { label: 'Experience Centres', path: '/experience-centres' },
+            { label: 'Refer and Earn', path: '/refer-friend' },
+            { label: 'Customer Dashboard', path: '/customer-dashboard' },
+            { label: 'Channel Partner Signup/Login', path: '/channel-partner-signup-login' },
+            { label: 'Become A Design Partner', path: '/become-a-design-partner' },
+            { label: 'Become A Franchisee', path: '/become-a-franchisee' },
+            { label: 'FAQs', path: '/faqs' }
           ]} />
 
           <div className="nav-actions mobile-only">

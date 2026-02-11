@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { User, PenTool, Box, CheckCircle, Truck, MapPin } from 'lucide-react';
-import '../index.css';
-import '../components/Features.css';
+import '../../index.css';
+import '../../components/Features.css';
 
 const steps = [
     {

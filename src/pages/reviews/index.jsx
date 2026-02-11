@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
-import '../components/Features.css';
+import '../../components/Features.css';
 
 const reviews = [
     {

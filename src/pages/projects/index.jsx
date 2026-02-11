@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Check, Star, Folder } from 'lucide-react';
-import '../components/Features.css';
+import { Check, Star, Folder, MapPin } from 'lucide-react';
+import '../../components/Features.css';
 
 const projects = [
     { id: 1, title: 'Bhanu’s Hyderabad Villa', tag: 'Villa', location: 'Hyderabad', image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=800&q=80', description: 'Modern interiors with a touch of luxury, featuring a spacious living area and a custom modular kitchen.' },
@@ -46,6 +46,5 @@ const Projects = () => {
         </div>
     );
 };
-import { MapPin } from 'lucide-react';
 
 export default Projects;
