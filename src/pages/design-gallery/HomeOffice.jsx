@@ -124,7 +124,7 @@ const HomeOffice = () => {
               FAQs on Home Office Designs
             </h2>
             <p className="text-gray-600 ">
-              Find answers to commonly asked questions about dining room interior design
+              Find answers to commonly asked questions about home office room interior design
             </p>
           </div>
           
