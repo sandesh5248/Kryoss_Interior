@@ -90,7 +90,7 @@ const DiningRoom = () => {
             Trusted by 15,000+ families for functional, elegant interiors.
           </p>
           <p className="text-xs text-gray-500 mt-3" style={{padding:'2px'}}>
-            Last updated: February 02, 2026
+            Last updated: February 12, 2026
           </p>
         </div>
       </div>
