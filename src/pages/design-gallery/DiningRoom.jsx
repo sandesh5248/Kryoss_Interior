@@ -117,7 +117,7 @@ const DiningRoom = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="bg-gradient-to-b from-gray-50 to-gray-100 flex justify-center">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 " >
           <div className="text-center  flex flex-col align-middle justify-center ">
             <h2 className="text-4xl font-bold text-gray-900 " style={{paddingTop:'40px'}}>
@@ -173,9 +173,10 @@ const FAQItem = ({ question, answer }) => {
         : 'border-gray-200 hover:border-teal-300 shadow-md hover:shadow-lg'
     }`} >
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-6 py-5 flex items-center justify-between text-left group transition-colors"
-      >
+  onClick={() => setIsOpen(!isOpen)}
+  className="w-full pl-10 pr-6 py-5 flex items-center justify-between text-left group transition-colors"
+>
+
         <h3 className={`text-base font-semibold pr-8 transition-colors ${
           isOpen ? 'text-teal-700' : 'text-gray-900 group-hover:text-teal-600'
         }`}>

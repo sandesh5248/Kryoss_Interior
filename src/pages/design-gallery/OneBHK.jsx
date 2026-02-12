@@ -117,7 +117,7 @@ const OneBHK = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="bg-gradient-to-b from-gray-50 to-gray-100 flex justify-center">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 " >
           <div className="text-center  flex flex-col align-middle justify-center ">
             <h2 className="text-4xl font-bold text-gray-900 " style={{paddingTop:'40px'}}>
