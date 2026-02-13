@@ -287,13 +287,13 @@ const DesignCard = ({ design }) => {
         </div>
       </div>
 
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-6 flex flex-col flex-grow" style={{paddingLeft:'10px'}}>
         <h3 className="text-base font-semibold text-gray-900 mb-4 line-clamp-2 min-h-[3rem] leading-relaxed">
           {design.title}
         </h3>
 
-        <div className="mt-auto flex items-center justify-between">
-          <button className="text-teal-600 hover:text-teal-700 font-medium text-sm flex items-center gap-1 transition-all hover:gap-2 group">
+        <div className="mt-auto flex items-center justify-between " style={{paddingBottom:'4px'}}>
+          <button className="text-teal-600 hover:text-teal-700 font-medium text-sm flex items-center gap-1 transition-all hover:gap-2 group" >
             Explore more
             <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
           </button>
