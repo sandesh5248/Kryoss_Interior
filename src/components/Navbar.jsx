@@ -22,9 +22,15 @@ const Navbar = () => {
 
   const navClass = `navbar ${scrolled ? 'scrolled' : ''}`;
 
-  const NavDropdown = ({ title, items }) => (
+  const NavDropdown = ({ title, items, path }) => (
     <div className="nav-item-dropdown">
-      <span className="nav-link-text">{title} <ChevronDown size={14} style={{ marginLeft: '4px' }} /></span>
+      {path ? (
+        <Link to={path} className="nav-link-text" onClick={() => setIsOpen(false)}>
+          {title} <ChevronDown size={14} style={{ marginLeft: '4px' }} />
+        </Link>
+      ) : (
+        <span className="nav-link-text">{title} <ChevronDown size={14} style={{ marginLeft: '4px' }} /></span>
+      )}
       <div className="dropdown-menu">
         {items.map((item, idx) => (
           <Link key={idx} to={item.path} className="dropdown-item" onClick={() => setIsOpen(false)}>
@@ -87,7 +93,7 @@ const Navbar = () => {
             { label: 'Materials and Finishes', path: '/guides/materials-and-finishes' }
           ]} />
 
-          <NavDropdown title="Blogs" items={[
+          <NavDropdown title="Blogs" path="/blogs" items={[
             { label: 'Modular Kitchen Interiors Ideas', path: '/blogs/modular-kitchen-interiors-ideas' },
             { label: 'Home Interior Design Ideas', path: '/blogs/home-interior-design-ideas' },
             { label: 'Bedroom Design Ideas', path: '/blogs/bedroom-design-ideas' },

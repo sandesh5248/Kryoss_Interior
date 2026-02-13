@@ -50,7 +50,8 @@ import GuideBathroom from './pages/guides/Bathroom';
 import GuideMaterialsFinishes from './pages/guides/MaterialsFinishes';
 
 // Blogs
-import Blogs from './pages/blogs/Trends';
+import Trends from './pages/blogs/Trends';
+import Blogs from './pages/blogs/Blogs';
 import HomeTours from './pages/blogs/HomeTours';
 import BlogModularKitchen from './pages/blogs/ModularKitchenInteriors';
 import BlogHomeInterior from './pages/blogs/HomeInteriorDesign';
@@ -147,7 +148,7 @@ function App() {
           <Route path="/guides/materials-and-finishes" element={<GuideMaterialsFinishes />} />
 
           {/* Blogs */}
-          <Route path="/blogs/trends" element={<Blogs />} />
+          <Route path="/blogs/trends" element={<Trends />} />
           <Route path="/blogs/tours" element={<HomeTours />} />
           <Route path="/blogs" element={<Blogs />} />
 

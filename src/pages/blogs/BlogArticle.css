@@ -90,6 +90,46 @@
     box-shadow: 0 15px 30px rgba(14, 165, 233, 0.4);
 }
 
+/* Feature Card Styles for Blog Listing */
+.feature-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    transition: transform 0.5s ease;
+}
+
+.feature-card:hover img {
+    transform: scale(1.05);
+}
+
+.hero-badge {
+    background-color: var(--primary);
+    /* Deep Red */
+    color: white;
+    /* White Text */
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-wrapper {
