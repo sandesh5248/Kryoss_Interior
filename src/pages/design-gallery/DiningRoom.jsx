@@ -100,7 +100,7 @@ const DiningRoom = () => {
       </div>
 
       {/* Designs Grid */}
-      <div className="bg-white py-12 pb-20 mt-10" style={{ paddingTop: '40px' }}>
+      <div className="bg-white py-12 pb-20 mt-10 flex justify-center align-middle" style={{ paddingTop: '40px' }}>
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 flex flex-col items-center">
           <div className="mb-20 text-center flex flex-col items-center">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2" style={{ padding: '5px' }}>
