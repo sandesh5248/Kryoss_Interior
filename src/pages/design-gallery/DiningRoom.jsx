@@ -171,7 +171,7 @@ const FAQItem = ({ question, answer }) => {
     <div className={`bg-white rounded-xl border-2 transition-all duration-300 ${isOpen
       ? 'border-teal-500 shadow-lg shadow-teal-100'
       : 'border-gray-200 hover:border-teal-300 shadow-md hover:shadow-lg'
-      }`} >
+      }`} style={{paddingLeft:'8px'}}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full pl-10 pr-6 py-5 flex items-center justify-between text-left group transition-colors"

@@ -130,8 +130,9 @@ const Bathroom = () => {
             </p>
           </div>
 
-          <div className="space-y-5 mt-0.5">
+          <div className="space-y-5 mt-0.5"  >
             <FAQItem
+            
               question="What are the best ways to design a bathroom space?"
               answer="The best ways to design a bathroom include optimizing layout for easy movement, selecting moisture-resistant materials, ensuring proper ventilation, and incorporating functional storage solutions. Good lighting, durable fittings, and a cohesive color scheme help create a comfortable and stylish bathroom environment."
             />
@@ -173,7 +174,7 @@ const FAQItem = ({ question, answer }) => {
     <div className={`bg-white rounded-xl border-2 transition-all duration-300 ${isOpen
       ? 'border-teal-500 shadow-lg shadow-teal-100'
       : 'border-gray-200 hover:border-teal-300 shadow-md hover:shadow-lg'
-      }`} >
+      }`}  style={{paddingLeft:'8px'}}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-5 flex items-center justify-between text-left group transition-colors"

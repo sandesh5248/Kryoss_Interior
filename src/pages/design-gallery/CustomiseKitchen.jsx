@@ -55,7 +55,7 @@ const CustomiseKitchen = () => {
             </div>
 
             {/* Customization Tool Section */}
-            <div className="bg-white py-12 pb-20 mt-10" style={{ paddingTop: '40px' }}>
+            <div className="py-12 pb-20 mt-10" style={{ paddingTop: '40px' }}>
                 <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
                     <div className="flex flex-col lg:flex-row gap-12">
                         {/* Left Image */}
@@ -164,7 +164,7 @@ const FAQItem = ({ question, answer }) => {
         <div className={`bg-white rounded-xl border-2 transition-all duration-300 ${isOpen
             ? 'border-teal-500 shadow-lg shadow-teal-100'
             : 'border-gray-200 hover:border-teal-300 shadow-md hover:shadow-lg'
-            }`} >
+            }`} style={{paddingLeft:'8px'}}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left group transition-colors"
