@@ -2,15 +2,51 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import livingRoom from '../../assets/design-gallery/living-room.jpg';
+import cutared from '../../assets/design-gallery/living/Curated Decor.jpg';
+import indoorPlants from '../../assets/design-gallery/living/Indoor Plants.jpg';
+import layeredLighting from '../../assets/design-gallery/living/Layered Lighting.jpg';
+import sectionalSofas from '../../assets/design-gallery/living/Sectional Sofas.jpg';
+import statementWalls from '../../assets/design-gallery/living/Statement Walls.jpg';
+import tvUnitDesign from '../../assets/design-gallery/living/TV Unit Design.jpg';
 
 const ideas = [
-    { icon: '', title: 'Sectional Sofas', desc: 'L-shaped or U-shaped sectionals anchor the living room and create a cozy, conversation-friendly layout.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Statement Walls', desc: 'A bold accent wall with wallpaper, textured panels or a gallery arrangement adds personality and depth.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
-    { icon: '', title: 'Layered Lighting', desc: 'Combine floor lamps, table lamps and ceiling fixtures to create a warm, flexible and inviting atmosphere.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { icon: '', title: 'Indoor Plants', desc: 'Strategically placed plants add life, colour and natural air purification to your living space.', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80' },
-    { icon: '', title: 'TV Unit Design', desc: 'A custom TV unit with integrated storage, display niches and cable management keeps the room tidy and stylish.', image: 'https://images.unsplash.com/photo-1593696140826-c58b021acf8b?w=600&q=80' },
-    { icon: '', title: 'Curated Decor', desc: 'Art pieces, sculptures and carefully chosen accessories tell your story and make the space uniquely yours.', image: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80' },
-];
+    {
+      icon: '',
+      title: 'Curated Decor',
+      desc: 'Carefully selected art pieces, sculptures and accessories that reflect your personality and elevate the overall aesthetic of your living space.',
+      image: cutared,
+    },
+    {
+      icon: '',
+      title: 'Indoor Plants',
+      desc: 'Strategically placed indoor plants bring freshness, texture and a calming natural vibe to your living room.',
+      image: indoorPlants,
+    },
+    {
+      icon: '',
+      title: 'Layered Lighting',
+      desc: 'A mix of ambient, task and accent lighting creates depth, warmth and flexibility for different moods and occasions.',
+      image: layeredLighting,
+    },
+    {
+      icon: '',
+      title: 'Sectional Sofas',
+      desc: 'Spacious L-shaped or U-shaped sectionals provide comfort, maximize seating and define the living area beautifully.',
+      image: sectionalSofas,
+    },
+    {
+      icon: '',
+      title: 'Statement Walls',
+      desc: 'Feature walls with textures, panels or bold finishes add character and become the focal point of the room.',
+      image: statementWalls,
+    },
+    {
+      icon: '',
+      title: 'TV Unit Design',
+      desc: 'Custom-designed TV units with smart storage and sleek finishes keep your entertainment area organized and stylish.',
+      image: tvUnitDesign,
+    },
+  ];
 
 const faqs = [
     { q: 'How do I choose the right sofa for my living room?', a: 'Consider the room size, traffic flow and your lifestyle. Sectionals work well for large rooms and families; a classic 3-seater is versatile for smaller spaces. Choose durable, easy-to-clean fabrics for everyday use.' },
@@ -96,7 +132,7 @@ const LivingRoom = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1600&q=80" alt="Luxury Living Room - Kryoss Interior" />
+                    <img src={sectionalSofas} alt="Luxury Living Room - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Contemporary Luxury Living Room â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +171,7 @@ const LivingRoom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="Contemporary Living Room" />
+                            <img src={cutared} alt="Contemporary Living Room" />
                         </div>
                     </div>
 
@@ -156,7 +192,7 @@ const LivingRoom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900&q=80" alt="Classic Living Room" />
+                            <img src={tvUnitDesign} alt="Classic Living Room" />
                         </div>
                     </div>
                 </section>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import bedroom from '../../assets/blogs/Bedroom Design.jpg';
 
+
 const bedroomIdeas = [
   { icon: '', title: 'Layered Lighting', desc: 'Warm bedside lamps combined with indirect ceiling lights create a relaxing, spa-like ambiance perfect for rest.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
   { icon: '', title: 'Sliding Wardrobes', desc: 'Glossy or matte-finish wardrobes with sliding shutters save space while adding a sleek, modern aesthetic.', image: 'https://images.unsplash.com/photo-1616594039964-40891a90b3b5?w=600&q=80' },

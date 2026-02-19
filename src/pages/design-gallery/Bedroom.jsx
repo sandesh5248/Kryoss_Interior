@@ -2,16 +2,46 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import bedroomDesign from '../../assets/design-gallery/bedroom-design.jpg';
+import bohemian from '../../assets/design-gallery/bedroom/Bohemian Retreat.jpg';
+import classicTraditional from '../../assets/design-gallery/bedroom/Classic Traditional.jpg';
+import contemporaryLuxury from '../../assets/design-gallery/bedroom/Contemporary Luxury.jpg';
+import cozyScandinavian from '../../assets/design-gallery/bedroom/Cozy Scandinavian.jpg';
+import industrialChic from '../../assets/design-gallery/bedroom/Industrial Chic.jpg';
+import modernMinimalist from '../../assets/design-gallery/bedroom/Modern Minimalist.jpg';
+import kidsBedroom from '../../assets/blogs/Kids Bedroom.jpg';
 
 const ideas = [
-    { title: 'Modern Minimalist', desc: 'Clean lines, neutral tones and clutter-free surfaces create a serene, restful retreat.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
-    { title: 'Contemporary Luxury', desc: 'Rich textures, statement headboards and layered lighting for an opulent master suite.', image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80' },
-    { title: 'Cozy Scandinavian', desc: 'Warm woods, soft textiles and hygge-inspired accents for a calm, inviting atmosphere.', image: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=600&q=80' },
-    { title: 'Classic Traditional', desc: 'Timeless furniture, ornate detailing and rich fabrics that never go out of style.', image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80' },
-    { title: 'Industrial Chic', desc: 'Exposed brick, metal accents and bold contrasts for an urban, edgy bedroom aesthetic.', image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80' },
-    { title: 'Bohemian Retreat', desc: 'Layered patterns, global textiles and eclectic art for a free-spirited, artistic space.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-];
-
+    {
+      title: 'Bohemian Retreat',
+      desc: 'Layered patterns, global textiles and eclectic décor elements create a relaxed, artistic and free-spirited bedroom.',
+      image: bohemian,
+    },
+    {
+      title: 'Classic Traditional',
+      desc: 'Timeless furniture silhouettes, elegant detailing and rich fabrics that bring warmth and sophistication.',
+      image: classicTraditional,
+    },
+    {
+      title: 'Contemporary Luxury',
+      desc: 'Premium finishes, statement headboards and layered lighting for a refined and opulent master suite.',
+      image: contemporaryLuxury,
+    },
+    {
+      title: 'Cozy Scandinavian',
+      desc: 'Soft neutral palettes, natural wood textures and minimal styling for a calm and inviting atmosphere.',
+      image: cozyScandinavian,
+    },
+    {
+      title: 'Industrial Chic',
+      desc: 'Raw materials, exposed textures and bold contrasts for a modern urban bedroom aesthetic.',
+      image: industrialChic,
+    },
+    {
+      title: 'Modern Minimalist',
+      desc: 'Clean lines, clutter-free layouts and subtle tones that create a peaceful, serene retreat.',
+      image: modernMinimalist,
+    },
+  ];
 const faqs = [
     { q: 'What colours work best for a peaceful bedroom?', a: 'Soft neutrals and pastel tones are ideal - warm beige, soft grey, dusty blue and gentle lavender all promote relaxation and restful sleep.' },
     { q: 'How can I maximize storage in a compact bedroom?', a: 'Use storage beds with hydraulic lift options, sliding wardrobes to save floor space, and vertical cabinets that utilize full wall height.' },
@@ -98,7 +128,7 @@ const Bedroom = () => {
 
                 {/* WIDE BANNER */}
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=1600&q=80" alt="Luxury Bedroom - Kryoss Interior" />
+                    <img src={contemporaryLuxury} alt="Luxury Bedroom - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Contemporary Luxury Bedroom â€¢ Kryoss Interior</div>
                 </div>
 
@@ -139,7 +169,7 @@ const Bedroom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=900&q=80" alt="Master Bedroom" />
+                            <img src={bedroomDesign} alt="Master Bedroom" />
                         </div>
                     </div>
 
@@ -160,7 +190,7 @@ const Bedroom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=80" alt="Kids Bedroom" />
+                            <img src={kidsBedroom} alt="Kids Bedroom" />
                         </div>
                     </div>
                 </section>
