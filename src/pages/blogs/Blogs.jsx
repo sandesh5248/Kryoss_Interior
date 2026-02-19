@@ -1,83 +1,95 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import bedroom from '../../assets/blogs/Bedroom Design.jpg';
+import dcDesign from '../../assets/blogs/DC Design.jpg';
+import dcHomeTours from '../../assets/blogs/DC Home Tours.jpg';
+import dcUpdates from '../../assets/blogs/DC Updates.jpg';
+import diningRoom from '../../assets/blogs/Dining Room.jpg';
+import homeDecor from '../../assets/blogs/Home Decor.jpg';
+import homeInterior from '../../assets/blogs/Home Interior.jpg';
+import kidsBedroom from '../../assets/blogs/Kids Bedroom.jpg';
+import livingRoom from '../../assets/blogs/Living Room.jpg';
+import modularKitchen from '../../assets/blogs/Modular Kitchen.jpg';
+import studyRoom from '../../assets/blogs/Study Room.jpg';
+import main from '../../assets/design-gallery/main.jpg';
 
 const categories = [
   {
     title: 'DC Updates',
     tag: 'Updates',
     link: '/blogs/dc-updates',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80',
+    image: dcUpdates,
     desc: 'Latest news and updates from Kryoss Interior'
   },
   {
     title: 'Home Tours',
     tag: 'Tours',
     link: '/blogs/dc-home-tours',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
+    image: dcHomeTours,
     desc: 'Step inside real homes designed by our team'
   },
   {
-    title: 'Design Stars',
-    tag: 'People',
-    link: '/blogs/dc-design-stars',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80',
-    desc: 'Meet the creative minds shaping modern interiors'
+    title: 'Design Insights',
+    tag: 'Design',
+    link: '/blogs/dc-design',
+    image: dcDesign,
+    desc: 'Expert design tips, trends and creative inspirations'
   },
   {
     title: 'Home Interior Designs',
     tag: 'Home',
     link: '/blogs/home-interior-design-ideas',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80',
+    image: homeInterior,
     desc: 'Comprehensive guides for every room in your home'
   },
   {
     title: 'Kitchen Interiors',
     tag: 'Kitchens',
     link: '/blogs/modular-kitchen-interiors-ideas',
-    image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=1200&q=80',
-    desc: 'Modular kitchen ideas, layouts and design tips'
+    image: modularKitchen,
+    desc: 'Modular kitchen ideas, layouts and smart design tips'
   },
   {
     title: 'Living Room Designs',
     tag: 'Living',
     link: '/blogs/living-room-design-ideas',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80',
+    image: livingRoom,
     desc: 'Transform your living space with expert design ideas'
   },
   {
     title: 'Dining Room Designs',
     tag: 'Dining',
     link: '/blogs/dining-room-design-ideas',
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=1200&q=80',
+    image: diningRoom,
     desc: 'Elegant dining spaces for memorable gatherings'
   },
   {
     title: 'Bedroom Ideas',
     tag: 'Bedroom',
     link: '/blogs/bedroom-design-ideas',
-    image: 'https://images.unsplash.com/photo-1616594039964-40891a90b3b5?w=1200&q=80',
+    image: bedroom,
     desc: 'Restful and stylish bedroom design inspirations'
   },
   {
     title: 'Kids Bedroom Designs',
     tag: 'Kids',
     link: '/blogs/kids-bedroom-design-ideas',
-    image: 'https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=1200&q=80',
+    image: kidsBedroom,
     desc: 'Fun, safe and creative spaces for little ones'
   },
   {
     title: 'Study Room Designs',
     tag: 'Study',
     link: '/blogs/study-room-design-ideas',
-    image: 'https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=1200&q=80',
+    image: studyRoom,
     desc: 'Productive and inspiring study room setups'
   },
   {
     title: 'Home Decor Ideas',
     tag: 'Decor',
     link: '/blogs/home-decor-ideas',
-    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1200&q=80',
+    image: homeDecor,
     desc: 'Finishing touches that elevate every space'
   },
 ];
@@ -91,7 +103,7 @@ const Blogs = () => {
       {/* ── HERO ── */}
       <div className="blogs-hero">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=80"
+          src={main}
           alt="Kryoss Interior Blog"
           className="blogs-hero__image"
         />
