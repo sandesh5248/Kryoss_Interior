@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import livingRoom from '../../assets/design-gallery/living-room.jpg';
 
 const ideas = [
     { icon: '', title: 'Sectional Sofas', desc: 'L-shaped or U-shaped sectionals anchor the living room and create a cozy, conversation-friendly layout.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
@@ -48,7 +49,7 @@ const LivingRoom = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1800&q=80" alt="Living Room Design" className="blog-hero__image" />
+                <img src={livingRoom} alt="Living Room Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">The Art of <em>Living Well</em></h1>

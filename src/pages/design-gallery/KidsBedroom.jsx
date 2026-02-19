@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import kidsBedroom from '../../assets/design-gallery/kids-bedroom.jpg';
 
 const ideas = [
     { icon: '', title: 'Vibrant Colour Themes', desc: 'Bold, cheerful colours stimulate creativity and make the room feel fun and inviting for children of all ages.', image: 'https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=600&q=80' },
@@ -48,7 +49,7 @@ const KidsBedroom = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=1800&q=80" alt="Kids Bedroom Design" className="blog-hero__image" />
+                <img src={kidsBedroom} alt="Kids Bedroom Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Where <em>Imagination</em> Comes Alive</h1>

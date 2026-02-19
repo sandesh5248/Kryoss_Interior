@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import oneBhk from '../../assets/design-gallery/1-bhk.jpg';
 
 const ideas = [
     { icon: '', title: 'Open-Plan Living', desc: 'Combine the living, dining and kitchen into one flowing space to maximize the feeling of openness in a compact 1BHK.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
@@ -48,7 +49,7 @@ const OneBHK = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1800&q=80" alt="1BHK Interior Design" className="blog-hero__image" />
+                <img src={oneBhk} alt="1BHK Interior Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Small Space, <em>Big Style</em></h1>

@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import homeOffice from '../../assets/design-gallery/home-office.jpg';
 
 const ideas = [
     { icon: '', title: 'Executive Desk Setup', desc: 'A large L-shaped or executive desk with cable management and monitor arms for a professional, productive workspace.', image: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80' },
@@ -48,7 +49,7 @@ const HomeOffice = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1800&q=80" alt="Home Office Design" className="blog-hero__image" />
+                <img src={homeOffice} alt="Home Office Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Your <em>Productivity</em> Sanctuary</h1>

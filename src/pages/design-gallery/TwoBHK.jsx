@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import twoBhk from '../../assets/design-gallery/2-bhk.jpg';
 
 const ideas = [
     { icon: '', title: 'Defined Living Zones', desc: 'A 2BHK allows for a proper separation of living, dining and sleeping areas - each with its own character and function.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
@@ -48,7 +49,7 @@ const TwoBHK = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=80" alt="2BHK Interior Design" className="blog-hero__image" />
+                <img src={twoBhk} alt="2BHK Interior Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">The Perfect <em>Family Home</em></h1>

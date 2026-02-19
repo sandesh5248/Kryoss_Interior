@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import spaceSaving from '../../assets/design-gallery/space-saving.jpg';
 
 const ideas = [
     { icon: '', title: 'Murphy Beds', desc: 'Wall beds that fold away when not in use free up the entire floor space of a room for daytime activities.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
@@ -48,7 +49,7 @@ const SpaceSaving = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1800&q=80" alt="Space Saving Interior Design" className="blog-hero__image" />
+                <img src={spaceSaving} alt="Space Saving Interior Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Ingenious Design for <em>Compact Living</em></h1>

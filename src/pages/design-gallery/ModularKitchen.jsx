@@ -1,14 +1,52 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import modularKitchen from '../../assets/design-gallery/moduler-kitchen.jpg';
+import breakfast from '../../assets/design-gallery/section/breakfast-counters.jpg';
+import islandKitchens from '../../assets/design-gallery/section/island-kitchens.jpg';
+import lShapedKitchens from '../../assets/design-gallery/section/l-shaped-Kitchens.jpg';
+import parallelKitchens from '../../assets/design-gallery/section/parallel-kitchens.jpg';
+import straightKitchens from '../../assets/design-gallery/section/straight-kitchens.jpg';
+import uShapedKitchens from '../../assets/design-gallery/section/u-shaped-kitchens.jpg';
+import main from '../../assets/design-gallery/main.jpg';
 
 const ideas = [
-    { icon: '', title: 'L-Shape Layout', desc: 'Perfect for medium-sized kitchens, the L-shape maximizes corner space and creates an efficient work triangle.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
-    { icon: '', title: 'U-Shape Layout', desc: 'Ideal for large kitchens, the U-shape provides maximum storage and counter space on three walls.', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&q=80' },
-    { icon: '', title: 'Island Kitchen', desc: 'A kitchen island adds extra prep space, seating and storage while becoming the social hub of the home.', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80' },
-    { icon: '', title: 'Parallel Layout', desc: 'Two parallel counters facing each other - efficient for narrow kitchens and professional-style cooking.', image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80' },
-    { icon: '', title: 'Handleless Cabinets', desc: 'Push-to-open or J-pull cabinets create a seamless, minimalist look that is easy to clean and maintain.', image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80' },
-    { icon: '', title: 'Quartz Countertops', desc: 'Engineered quartz is scratch-resistant, non-porous and available in hundreds of colours and patterns.', image: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'L-Shape Layout', 
+        desc: 'Perfect for medium-sized kitchens, the L-shape maximizes corner space and creates an efficient work triangle.', 
+        image: lShapedKitchens 
+    },
+    { 
+        icon: '', 
+        title: 'U-Shape Layout', 
+        desc: 'Ideal for large kitchens, the U-shape provides maximum storage and counter space on three walls.', 
+        image: uShapedKitchens 
+    },
+    { 
+        icon: '', 
+        title: 'Island Kitchen', 
+        desc: 'A kitchen island adds extra prep space, seating and storage while becoming the social hub of the home.', 
+        image: islandKitchens 
+    },
+    { 
+        icon: '', 
+        title: 'Parallel Layout', 
+        desc: 'Two parallel counters facing each other - efficient for narrow kitchens and professional-style cooking.', 
+        image: parallelKitchens 
+    },
+    { 
+        icon: '', 
+        title: 'Straight Kitchen', 
+        desc: 'A single-wall layout ideal for compact homes and studio apartments.', 
+        image: straightKitchens 
+    },
+    { 
+        icon: '', 
+        title: 'Breakfast Counter', 
+        desc: 'Adds casual dining space while enhancing functionality and aesthetics.', 
+        image: breakfast 
+    },
 ];
 
 const faqs = [
@@ -48,7 +86,7 @@ const ModularKitchen = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=1800&q=80" alt="Modular Kitchen" className="blog-hero__image" />
+                <img src={modularKitchen} alt="Modular Kitchen" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Where <em>Elegance</em> Meets Efficiency</h1>
@@ -95,7 +133,7 @@ const ModularKitchen = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80" alt="Modular Kitchen - Kryoss Interior" />
+                    <img src={straightKitchens} alt="Modular Kitchen - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Premium Modular Kitchen Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -134,7 +172,7 @@ const ModularKitchen = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Kitchen Storage" />
+                            <img src={main} alt="Kitchen Storage" />
                         </div>
                     </div>
 
@@ -155,7 +193,7 @@ const ModularKitchen = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900&q=80" alt="Kitchen Finishes" />
+                            <img src={parallelKitchens} alt="Kitchen Finishes" />
                         </div>
                     </div>
                 </section>

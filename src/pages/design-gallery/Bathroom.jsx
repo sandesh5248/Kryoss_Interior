@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import bathroomDesigns from '../../assets/design-gallery/bathroom-designs.jpg';
 
 const ideas = [
     { icon: '', title: 'Spa-Style Retreat', desc: 'Freestanding tubs, rainfall showers and natural stone create a five-star spa experience at home.', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80' },
@@ -48,7 +49,7 @@ const Bathroom = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1800&q=80" alt="Bathroom Design" className="blog-hero__image" />
+                <img src={bathroomDesigns} alt="Bathroom Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Your Private <em>Spa Retreat</em></h1>

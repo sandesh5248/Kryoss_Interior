@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import bedroomDesign from '../../assets/design-gallery/bedroom-design.jpg';
 
 const ideas = [
     { title: 'Modern Minimalist', desc: 'Clean lines, neutral tones and clutter-free surfaces create a serene, restful retreat.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
@@ -48,7 +49,7 @@ const Bedroom = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1800&q=80" alt="Bedroom Design" className="blog-hero__image" />
+                <img src={bedroomDesign} alt="Bedroom Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Your Personal <em>Sanctuary</em></h1>

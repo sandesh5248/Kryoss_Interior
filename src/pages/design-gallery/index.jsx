@@ -1,21 +1,39 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import main from '../../assets/design-gallery/main.jpg';
+import oneBhk from '../../assets/design-gallery/1-bhk.jpg';
+import twoBhk from '../../assets/design-gallery/2-bhk.jpg';
+import threeBhk from '../../assets/design-gallery/3-bhk.jpg';
+import bathroomDesigns from '../../assets/design-gallery/bathroom-designs.jpg';
+import bedroomDesign from '../../assets/design-gallery/bedroom-design.jpg';
+import customiseKitchen from '../../assets/design-gallery/customise-kitchen.jpg';
+import diningRoom from '../../assets/design-gallery/dining-room.jpg';
+import homeOffice from '../../assets/design-gallery/home-office.jpg';
+import kidsBedroom from '../../assets/design-gallery/kids-bedroom.jpg';
+import livingRoom from '../../assets/design-gallery/living-room.jpg';
+
+import modularKitchen from '../../assets/design-gallery/moduler-kitchen.jpg';
+import spaceSaving from '../../assets/design-gallery/space-saving.jpg';
+import wardrobesDesign from '../../assets/design-gallery/wardrobes-design.jpg';
+import main1 from '../../assets/design-gallery/main1.jpeg';
+
+
 
 const collections = [
-    { title: 'Modular Kitchens', link: '/design-gallery/modular-kitchen-designs', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=800&q=80', tag: 'Kitchen', desc: '5+ layouts, smart storage, premium finishes' },
-    { title: 'Bedroom Designs', link: '/design-gallery/bedroom-designs', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=800&q=80', tag: 'Bedroom', desc: 'Master suites, kids rooms, guest bedrooms' },
-    { title: 'Living Room Designs', link: '/design-gallery/living-room-designs', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80', tag: 'Living Room', desc: 'Contemporary, classic and eclectic styles' },
-    { title: 'Wardrobe Designs', link: '/design-gallery/wardrobe-designs', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', tag: 'Wardrobe', desc: 'Sliding, walk-in and custom wardrobe solutions' },
-    { title: 'Bathroom Designs', link: '/design-gallery/bathroom-designs', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80', tag: 'Bathroom', desc: 'Spa-inspired master and compact bathrooms' },
-    { title: 'Dining Room Designs', link: '/design-gallery/dining-room-designs', image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80', tag: 'Dining', desc: 'Formal dining, open-plan and breakfast nooks' },
-    { title: 'Home Office Designs', link: '/design-gallery/home-office-designs', image: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80', tag: 'Office', desc: 'Executive offices and creative studios' },
-    { title: 'Kids Bedroom Designs', link: '/design-gallery/kids-bedroom-designs', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80', tag: 'Kids', desc: 'Age-appropriate, fun and functional spaces' },
-    { title: 'Space Saving Designs', link: '/design-gallery/space-saving-designs', image: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&q=80', tag: 'Space Saving', desc: 'Murphy beds, hidden storage and smart solutions' },
-    { title: '1BHK Interiors', link: '/design-gallery/1bhk-designs', image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80', tag: '1BHK', desc: 'Compact, smart and beautifully designed' },
-    { title: '2BHK Interiors', link: '/design-gallery/2bhk-designs', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', tag: '2BHK', desc: 'The perfect family home, fully designed' },
-    { title: '3BHK Interiors', link: '/design-gallery/3bhk-designs', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', tag: '3BHK', desc: 'Luxury living, fully realised' },
-    { title: 'Customise Kitchen', link: '/design-gallery/customise-kitchen', image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80', tag: 'Custom', desc: 'Bespoke kitchens designed for you' },
+    { title: 'Modular Kitchens', link: '/design-gallery/modular-kitchen-designs', image: modularKitchen, tag: 'Kitchen', desc: '5+ layouts, smart storage, premium finishes' },
+    { title: 'Bedroom Designs', link: '/design-gallery/bedroom-designs', image: bedroomDesign, tag: 'Bedroom', desc: 'Master suites, kids rooms, guest bedrooms' },
+    { title: 'Living Room Designs', link: '/design-gallery/living-room-designs', image: livingRoom, tag: 'Living Room', desc: 'Contemporary, classic and eclectic styles' },
+    { title: 'Wardrobe Designs', link: '/design-gallery/wardrobe-designs', image: wardrobesDesign, tag: 'Wardrobe', desc: 'Sliding, walk-in and custom wardrobe solutions' },
+    { title: 'Bathroom Designs', link: '/design-gallery/bathroom-designs', image: bathroomDesigns, tag: 'Bathroom', desc: 'Spa-inspired master and compact bathrooms' },
+    { title: 'Dining Room Designs', link: '/design-gallery/dining-room-designs', image: diningRoom, tag: 'Dining', desc: 'Formal dining, open-plan and breakfast nooks' },
+    { title: 'Home Office Designs', link: '/design-gallery/home-office-designs', image: homeOffice, tag: 'Office', desc: 'Executive offices and creative studios' },
+    { title: 'Kids Bedroom Designs', link: '/design-gallery/kids-bedroom-designs', image: kidsBedroom, tag: 'Kids', desc: 'Age-appropriate, fun and functional spaces' },
+    { title: 'Space Saving Designs', link: '/design-gallery/space-saving-designs', image: spaceSaving, tag: 'Space Saving', desc: 'Murphy beds, hidden storage and smart solutions' },
+    { title: '1BHK Interiors', link: '/design-gallery/1bhk-designs', image: oneBhk, tag: '1BHK', desc: 'Compact, smart and beautifully designed' },
+    { title: '2BHK Interiors', link: '/design-gallery/2bhk-designs', image: twoBhk, tag: '2BHK', desc: 'The perfect family home, fully designed' },
+    { title: '3BHK Interiors', link: '/design-gallery/3bhk-designs', image: threeBhk, tag: '3BHK', desc: 'Luxury living, fully realised' },
+    { title: 'Customise Kitchen', link: '/design-gallery/customise-kitchen', image: customiseKitchen, tag: 'Custom', desc: 'Bespoke kitchens designed for you' },
 ];
 
 const DesignGallery = () => {
@@ -49,7 +67,7 @@ const DesignGallery = () => {
         <div className="blog-page">
             {/* Hero */}
             <div className="blog-hero" ref={reg('hero')} data-section="hero">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=80" alt="Design Gallery" className="blog-hero__image" />
+                <img src={main} alt="Design Gallery" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
 
@@ -126,7 +144,7 @@ const DesignGallery = () => {
 
                 {/* Wide image */}
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=1600&q=80" alt="Kryoss Interior Design Gallery" />
+                    <img src={main1} alt="Kryoss Interior Design Gallery" />
                     <div className="blog-wide-image__caption">Every design tells a story • Kryoss Interior</div>
                 </div>
 
@@ -149,7 +167,7 @@ const DesignGallery = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '520px' }}>
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Kryoss Interior Design" />
+                            <img src={main} alt="Kryoss Interior Design" />
                         </div>
                     </div>
                 </section>

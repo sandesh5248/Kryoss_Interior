@@ -1,14 +1,52 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
-
+import customiseKitchen from '../../assets/design-gallery/customise-kitchen.jpg';
+import islandIntegration from '../../assets/design-gallery/customise/island-integration.jpg';
+import lacqueredGlass from '../../assets/design-gallery/customise/lacquered-glass.jpg';
+import luxuryAcrylics from '../../assets/design-gallery/customise/luxury-acrylics.jpg';
+import matteFinishes from '../../assets/design-gallery/customise/matte-finishes.jpg';
+import naturalVeneers from '../../assets/design-gallery/customise/natural-veneers.jpg';
+import premiumLaminates from '../../assets/design-gallery/customise/premium-laminates.jpg';
+import uShapedKitchens from '../../assets/design-gallery/section/u-shaped-kitchens.jpg';
+import straightKitchens from '../../assets/design-gallery/section/straight-kitchens.jpg';
 const ideas = [
-    { icon: '', title: 'Custom Cabinet Colours', desc: 'Choose any RAL or NCS colour for your cabinet doors - from classic white to bold navy or forest green.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
-    { icon: '', title: 'Bespoke Countertops', desc: 'Select from quartz, granite, marble, dekton or solid surface - cut to your exact dimensions and edge profile.', image: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80' },
-    { icon: '', title: 'Custom Hardware', desc: 'Choose from hundreds of handle styles, materials and finishes - or go handleless with push-to-open mechanisms.', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&q=80' },
-    { icon: '', title: 'Integrated Lighting', desc: 'Under-cabinet LED strips, plinth lights and interior cabinet lighting create a premium, layered lighting effect.', image: 'https://images.unsplash.com/photo-1513506003901-1e6a35f7a0b4?w=600&q=80' },
-    { icon: '', title: 'Custom Island Design', desc: 'A bespoke kitchen island with your choice of size, shape, material and integrated features like sinks or hobs.', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80' },
-    { icon: '', title: 'Tailored Layouts', desc: 'Every kitchen is different. We design around your space, your cooking habits and your lifestyle - not a template.', image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Luxury Acrylic Finishes', 
+        desc: 'High-gloss, ultra-modern surfaces that create a sleek and premium kitchen aesthetic.', 
+        image: luxuryAcrylics
+    },
+    { 
+        icon: '', 
+        title: 'Premium Laminates', 
+        desc: 'Durable, cost-effective and available in a wide range of textures and finishes.', 
+        image: premiumLaminates
+    },
+    { 
+        icon: '', 
+        title: 'Lacquered Glass', 
+        desc: 'Glossy, easy-to-clean glass finishes perfect for contemporary kitchen backsplashes and cabinets.', 
+        image: lacqueredGlass
+    },
+    { 
+        icon: '', 
+        title: 'Matte Finishes', 
+        desc: 'Soft-touch matte finishes for a refined, fingerprint-resistant kitchen look.', 
+        image: matteFinishes
+    },
+    { 
+        icon: '', 
+        title: 'Natural Veneers', 
+        desc: 'Real wood veneer surfaces that bring warmth and elegance to your custom kitchen.', 
+        image: naturalVeneers
+    },
+    { 
+        icon: '', 
+        title: 'Island Integration', 
+        desc: 'Seamlessly integrate custom islands with sinks, hobs, seating and smart storage solutions.', 
+        image: islandIntegration
+    },
 ];
 
 const faqs = [
@@ -48,7 +86,7 @@ const CustomiseKitchen = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=1800&q=80" alt="Customise Kitchen" className="blog-hero__image" />
+                <img src={customiseKitchen} alt="Customise Kitchen" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
 
@@ -96,7 +134,7 @@ const CustomiseKitchen = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1600&q=80" alt="Custom Kitchen - Kryoss Interior" />
+                    <img src={uShapedKitchens} alt="Custom Kitchen - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Bespoke Custom Kitchen Design • Kryoss Interior</div>
                 </div>
 
@@ -135,7 +173,7 @@ const CustomiseKitchen = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="Kitchen Design Process" />
+                            <img src={straightKitchens} alt="Kitchen Design Process" />
                         </div>
                     </div>
 
@@ -156,7 +194,7 @@ const CustomiseKitchen = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=900&q=80" alt="Premium Kitchen Materials" />
+                            <img src={luxuryAcrylics} alt="Premium Kitchen Materials" />
                         </div>
                     </div>
                 </section>

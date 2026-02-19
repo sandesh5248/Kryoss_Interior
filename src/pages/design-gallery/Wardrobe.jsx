@@ -1,15 +1,53 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import wardrobesDesign from '../../assets/design-gallery/wardrobes-design.jpg';
+
+import glassFront from '../../assets/design-gallery/wardrobe/Glass Front.jpg';
+import hingedClassic from '../../assets/design-gallery/wardrobe/Hinged Classic.jpg';
+import kidsWardrobe from '../../assets/design-gallery/wardrobe/Kids Wardrobe.jpg';
+import loftIntegrated from '../../assets/design-gallery/wardrobe/Loft Integrated.jpg';
+import modernSliding from '../../assets/design-gallery/wardrobe/Modern Sliding.jpg';
+import walkInLuxury from '../../assets/design-gallery/wardrobe/walk-in-luxury.jpg';
 
 const ideas = [
-    { icon: '', title: 'Walk-In Wardrobe', desc: 'A dedicated walk-in wardrobe with custom shelving, drawers and hanging space for the ultimate dressing experience.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-    { icon: '', title: 'Mirror Doors', desc: 'Full-length mirrored sliding doors make the room feel larger while providing a practical dressing mirror.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Open Display', desc: 'Open wardrobe systems with display rails and shelves for a boutique-style, curated clothing presentation.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { icon: '', title: 'Interior Lighting', desc: 'LED strip lighting inside the wardrobe illuminates every corner and makes finding clothes effortless.', image: 'https://images.unsplash.com/photo-1513506003901-1e6a35f7a0b4?w=600&q=80' },
-    { icon: '', title: 'Shoe Storage', desc: 'Dedicated shoe racks, pull-out drawers and angled shelves keep your footwear collection organized and accessible.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-    { icon: '', title: 'Modular Systems', desc: 'Flexible modular wardrobe systems that can be reconfigured as your storage needs change over time.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
-];
+    {
+      icon: '',
+      title: 'Glass Front Wardrobe',
+      desc: 'Elegant glass front panels create a modern and sophisticated look while allowing a subtle display of your wardrobe interior.',
+      image: glassFront,
+    },
+    {
+      icon: '',
+      title: 'Hinged Classic Wardrobe',
+      desc: 'Traditional hinged door wardrobes offering full access, timeless styling, and practical internal storage solutions.',
+      image: hingedClassic,
+    },
+    {
+      icon: '',
+      title: 'Kids Wardrobe',
+      desc: 'Fun, functional and safe wardrobe designs tailored for children with smart storage and playful aesthetics.',
+      image: kidsWardrobe,
+    },
+    {
+      icon: '',
+      title: 'Loft Integrated Wardrobe',
+      desc: 'Space-saving loft-integrated wardrobes that maximise vertical storage while maintaining a clean built-in look.',
+      image: loftIntegrated,
+    },
+    {
+      icon: '',
+      title: 'Modern Sliding Wardrobe',
+      desc: 'Sleek sliding door wardrobes ideal for compact spaces, combining contemporary design with smooth functionality.',
+      image: modernSliding,
+    },
+    {
+      icon: '',
+      title: 'Walk-In Luxury Wardrobe',
+      desc: 'A premium walk-in wardrobe solution featuring custom shelving, drawers, and hanging areas for a complete dressing experience.',
+      image: walkInLuxury,
+    },
+  ];
 
 const faqs = [
     { q: 'What is the standard wardrobe depth?', a: 'Standard wardrobe depth is 60cm (24 inches) for hanging clothes. Sliding door wardrobes typically need 65-70cm depth to accommodate the door mechanism. Shelving-only sections can be shallower at 35-45cm.' },
@@ -48,7 +86,7 @@ const Wardrobe = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80" alt="Wardrobe Design" className="blog-hero__image" />
+                <img src={wardrobesDesign} alt="Wardrobe Design" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Your Personal <em>Style Studio</em></h1>
@@ -95,7 +133,7 @@ const Wardrobe = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Custom Wardrobe - Kryoss Interior" />
+                    <img src={walkInLuxury} alt="Custom Wardrobe - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Walk-In Wardrobe Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -134,7 +172,7 @@ const Wardrobe = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=900&q=80" alt="Sliding Wardrobe" />
+                            <img src={modernSliding} alt="Sliding Wardrobe" />
                         </div>
                     </div>
 
@@ -155,7 +193,7 @@ const Wardrobe = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="Walk-In Wardrobe" />
+                            <img src={glassFront} alt="Walk-In Wardrobe" />
                         </div>
                     </div>
                 </section>
