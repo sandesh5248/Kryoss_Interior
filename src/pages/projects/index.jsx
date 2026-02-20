@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import hero from '../../assets/recent/hero.jpg';
 import bhanu from '../../assets/recent/bhanu.png';
-
+import ruban from '../../assets/recent/ruban.png';
+import minimalist from '../../assets/recent/minimalist.png';
+import threebhk from '../../assets/recent/3bhk.png';
+import Fourbhk from '../../assets/recent/4bhk.png';
+import luxury from '../../assets/recent/luxury.png';
+import transformation from '../../assets/recent/transformation.png';
 const projects = [
     {
         id: 1, title: "Bhanu's Hyderabad Villa", tag: 'Villa', location: 'Hyderabad',
@@ -13,31 +18,31 @@ const projects = [
     },
     {
         id: 2, title: "Mr. Ruban Prasanth's 2BHK", tag: '2BHK', location: 'Coimbatore',
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
+        image: ruban,
         description: 'Earthy home interiors with functional furniture and warm lighting that creates a cozy, welcoming atmosphere.',
         area: '1,100 sq ft', duration: '8 weeks', style: 'Warm Minimalist'
     },
     {
         id: 3, title: '3BHK Bren Imperia', tag: '3BHK', location: 'Bengaluru',
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+        image: threebhk,
         description: 'A seamless blend of contemporary design and comfort for a growing family with three distinct bedrooms.',
         area: '1,800 sq ft', duration: '12 weeks', style: 'Modern Family'
     },
     {
         id: 4, title: 'Spacious 4BHK Apartment', tag: '4BHK', location: 'Mumbai',
-        image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+        image: Fourbhk,
         description: 'Sophisticated design with premium finishes and smart storage solutions across four beautifully designed rooms.',
         area: '2,400 sq ft', duration: '16 weeks', style: 'Premium Modern'
     },
     {
         id: 5, title: 'Minimalist Studio', tag: 'Studio', location: 'Pune',
-        image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80',
+        image: minimalist,
         description: 'Clever use of space with multifunctional furniture and clean lines that make every square foot count.',
         area: '450 sq ft', duration: '5 weeks', style: 'Minimalist'
     },
     {
         id: 6, title: 'Luxury Penthouse', tag: 'Penthouse', location: 'Chennai',
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80',
+        image: luxury,
         description: 'Grand interiors with bespoke furniture, statement lighting and panoramic city views from every room.',
         area: '4,500 sq ft', duration: '20 weeks', style: 'Ultra Luxury'
     },
@@ -145,7 +150,7 @@ const Projects = () => {
 
                 {/* Wide image */}
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80" alt="Kryoss Interior Projects" />
+                    <img src={transformation} alt="Kryoss Interior Projects" />
                     <div className="blog-wide-image__caption">Every project is a story of transformation • Kryoss Interior</div>
                 </div>
 
