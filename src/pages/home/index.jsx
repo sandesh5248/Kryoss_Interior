@@ -7,13 +7,14 @@ import { ArrowRight, Star, PlayCircle, Calculator, ChevronRight, UserCheck, Shie
 import '../../components/Features.css';
 import '../blogs/BlogArticle.css';
 import './Home.css';
+import hero from '../../assets/Home/hero.png';
 
 const Home = () => {
     return (
         <div className="blog-page">
             {/* Hero Section - Redesigned with Original Content */}
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=85" alt="Luxury Interior" className="blog-hero__image" />
+                <img src={hero} alt="Luxury Interior" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Home Interiors <br /><em style={{ color: 'var(--kr-gold)' }}>Made Easy</em></h1>

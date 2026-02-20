@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import hero from '../../assets/recent/hero.jpg';
 
 const projects = [
     {
@@ -66,7 +67,7 @@ const Projects = () => {
         <div className="blog-page" style={{ backgroundColor: 'var(--kr-dark)' }}>
             {/* Hero */}
             <div className="blog-hero" ref={reg('hero')} data-section="hero">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=80" alt="Recent Projects" className="blog-hero__image" />
+                <img src={hero} alt="Recent Projects" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
 
