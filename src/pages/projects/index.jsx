@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import hero from '../../assets/recent/hero.jpg';
+import bhanu from '../../assets/recent/bhanu.png';
 
 const projects = [
     {
         id: 1, title: "Bhanu's Hyderabad Villa", tag: 'Villa', location: 'Hyderabad',
-        image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80',
+        image: bhanu,
         description: 'Modern interiors with a touch of luxury, featuring a spacious living area and a custom modular kitchen.',
         area: '3,200 sq ft', duration: '14 weeks', style: 'Contemporary Luxury'
     },
