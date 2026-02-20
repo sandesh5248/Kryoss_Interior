@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import hero from '../../assets/home/hero.png';
+
 
 const ROOM_COSTS = {
   basic: { livingRoom: 45000, bedroom: 35000, kitchen: 55000, bathroom: 25000, diningRoom: 30000, studyRoom: 28000 },

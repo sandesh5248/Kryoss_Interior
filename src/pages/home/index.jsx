@@ -7,6 +7,19 @@ import { ArrowRight, Star, PlayCircle, Calculator, ChevronRight, UserCheck, Shie
 import '../../components/Features.css';
 import '../blogs/BlogArticle.css';
 import './Home.css';
+import hero from '../../assets/home/hero.png';
+import bedroom from '../../assets/home/bedroom.png';
+import contemporary from '../../assets/home/contemporary.png';
+import full from '../../assets/home/full.png';
+import living from '../../assets/home/living.png';
+import luxury from '../../assets/home/luxury.png';
+import modern from '../../assets/home/modern.png';
+import modular from '../../assets/home/modular.png';
+import plan from '../../assets/home/plan.png';
+import wardrobe from '../../assets/home/wardrobe.png';
+import project1 from '../../assets/home/project1.png';
+import project2 from '../../assets/home/project2.png';
+import project3 from '../../assets/home/project3.png';
 
 const Home = () => {
 
@@ -14,7 +27,7 @@ const Home = () => {
         <div className="blog-page">
             {/* Hero Section - Redesigned with Original Content */}
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=85" alt="Luxury Interior" className="blog-hero__image" />
+                <img src={hero} alt="Luxury Interior" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Home Interiors <br /><em style={{ color: 'var(--kr-gold)' }}>Made Easy</em></h1>
@@ -56,7 +69,7 @@ const Home = () => {
                     <div className="grid grid-3 gallery-preview">
                         <Link to="/design-gallery/modular-kitchen-designs" className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                             <div className="img-container" style={{ height: '250px', overflow: 'hidden' }}>
-                                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchen" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={modular} alt="Modular Kitchen" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div className="content" style={{ padding: '1.5rem', background: '#1a1a1a' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Modular Kitchens</h3>
@@ -65,7 +78,7 @@ const Home = () => {
                         </Link>
                         <Link to="/design-gallery/bedroom-designs" className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                             <div className="img-container" style={{ height: '250px', overflow: 'hidden' }}>
-                                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" alt="Bedroom" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={bedroom} alt="Bedroom" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div className="content" style={{ padding: '1.5rem', background: '#1a1a1a' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Bedroom Designs</h3>
@@ -74,7 +87,7 @@ const Home = () => {
                         </Link>
                         <Link to="/design-gallery/living-room-designs" className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                             <div className="img-container" style={{ height: '250px', overflow: 'hidden' }}>
-                                <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80" alt="Living Room" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={living} alt="Living Room" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div className="content" style={{ padding: '1.5rem', background: '#1a1a1a' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Living Room Designs</h3>
@@ -130,7 +143,7 @@ const Home = () => {
                     <div className="grid grid-3">
                         <div className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column' }}>
                             <div className="img-container" style={{ height: '220px', overflow: 'hidden' }}>
-                                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Full Home" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={full} alt="Full Home" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div style={{ padding: '2rem', background: '#1a1a1a', flex: 1, display: 'flex', flexDirection: 'column' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>Full Home Interiors</h3>
@@ -140,7 +153,7 @@ const Home = () => {
                         </div>
                         <div className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column' }}>
                             <div className="img-container" style={{ height: '220px', overflow: 'hidden' }}>
-                                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchens" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={modular} alt="Modular Kitchens" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div style={{ padding: '2rem', background: '#1a1a1a', flex: 1, display: 'flex', flexDirection: 'column' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>Modular Kitchens</h3>
@@ -150,7 +163,7 @@ const Home = () => {
                         </div>
                         <div className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column' }}>
                             <div className="img-container" style={{ height: '220px', overflow: 'hidden' }}>
-                                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" alt="Wardrobes" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={wardrobe} alt="Wardrobes" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div style={{ padding: '2rem', background: '#1a1a1a', flex: 1, display: 'flex', flexDirection: 'column' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>Wardrobes</h3>
@@ -165,7 +178,7 @@ const Home = () => {
             {/* Calculators Banner - Redesigned */}
             <section className="section" style={{ padding: '0' }}>
                 <div className="calculator-banner">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1920&q=80" alt="Budget" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }} />
+                    <img src={plan} alt="Budget" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }} />
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(3px)', zIndex: 1 }}></div>
 
                     <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -213,7 +226,7 @@ const Home = () => {
                     <div className="grid grid-3">
                         <Link to="/projects" className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                             <div className="img-wrapper" style={{ overflow: 'hidden', height: '250px' }}>
-                                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Project 1" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={project1} alt="Project 1" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div className="project-card-content" style={{ padding: '1.5rem', background: '#1a1a1a' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Modern Villa in Bangalore</h3>
@@ -222,7 +235,7 @@ const Home = () => {
                         </Link>
                         <Link to="/projects" className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                             <div className="img-wrapper" style={{ overflow: 'hidden', height: '250px' }}>
-                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Project 2" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={project2} alt="Project 2" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div className="project-card-content" style={{ padding: '1.5rem', background: '#1a1a1a' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Luxury Apartment in Mumbai</h3>
@@ -231,7 +244,7 @@ const Home = () => {
                         </Link>
                         <Link to="/projects" className="blog-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                             <div className="img-wrapper" style={{ overflow: 'hidden', height: '250px' }}>
-                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Project 3" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
+                                <img src={project3}alt="Project 3" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} />
                             </div>
                             <div className="project-card-content" style={{ padding: '1.5rem', background: '#1a1a1a' }}>
                                 <h3 style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Contemporary Flat in Pune</h3>
