@@ -1,13 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
-<<<<<<< HEAD
 
-const projects = [
-    {
-        id: 1, title: "Bhanu's Hyderabad Villa", tag: 'Villa', location: 'Hyderabad',
-        image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80',
-=======
 import hero from '../../assets/recent/hero.jpg';
 import bhanu from '../../assets/recent/bhanu.png';
 import ruban from '../../assets/recent/ruban.png';
@@ -16,61 +10,41 @@ import threebhk from '../../assets/recent/3bhk.png';
 import Fourbhk from '../../assets/recent/4bhk.png';
 import luxury from '../../assets/recent/luxury.png';
 import transformation from '../../assets/recent/transformation.png';
+
 const projects = [
     {
         id: 1, title: "Bhanu's Hyderabad Villa", tag: 'Villa', location: 'Hyderabad',
         image: bhanu,
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
         description: 'Modern interiors with a touch of luxury, featuring a spacious living area and a custom modular kitchen.',
         area: '3,200 sq ft', duration: '14 weeks', style: 'Contemporary Luxury'
     },
     {
         id: 2, title: "Mr. Ruban Prasanth's 2BHK", tag: '2BHK', location: 'Coimbatore',
-<<<<<<< HEAD
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
-=======
         image: ruban,
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
         description: 'Earthy home interiors with functional furniture and warm lighting that creates a cozy, welcoming atmosphere.',
         area: '1,100 sq ft', duration: '8 weeks', style: 'Warm Minimalist'
     },
     {
         id: 3, title: '3BHK Bren Imperia', tag: '3BHK', location: 'Bengaluru',
-<<<<<<< HEAD
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
-=======
         image: threebhk,
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
         description: 'A seamless blend of contemporary design and comfort for a growing family with three distinct bedrooms.',
         area: '1,800 sq ft', duration: '12 weeks', style: 'Modern Family'
     },
     {
         id: 4, title: 'Spacious 4BHK Apartment', tag: '4BHK', location: 'Mumbai',
-<<<<<<< HEAD
-        image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
-=======
         image: Fourbhk,
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
         description: 'Sophisticated design with premium finishes and smart storage solutions across four beautifully designed rooms.',
         area: '2,400 sq ft', duration: '16 weeks', style: 'Premium Modern'
     },
     {
         id: 5, title: 'Minimalist Studio', tag: 'Studio', location: 'Pune',
-<<<<<<< HEAD
-        image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80',
-=======
         image: minimalist,
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
         description: 'Clever use of space with multifunctional furniture and clean lines that make every square foot count.',
         area: '450 sq ft', duration: '5 weeks', style: 'Minimalist'
     },
     {
         id: 6, title: 'Luxury Penthouse', tag: 'Penthouse', location: 'Chennai',
-<<<<<<< HEAD
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80',
-=======
         image: luxury,
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
         description: 'Grand interiors with bespoke furniture, statement lighting and panoramic city views from every room.',
         area: '4,500 sq ft', duration: '20 weeks', style: 'Ultra Luxury'
     },
@@ -98,17 +72,10 @@ const Projects = () => {
     const navSections = ['hero', 'projects', 'cta'];
 
     return (
-<<<<<<< HEAD
         <div className="blog-page" style={{ backgroundColor: '#fff' }}>
             {/* Hero */}
             <div className="blog-hero" ref={reg('hero')} data-section="hero">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=80" alt="Recent Projects" className="blog-hero__image" />
-=======
-        <div className="blog-page" style={{ backgroundColor: 'var(--kr-dark)' }}>
-            {/* Hero */}
-            <div className="blog-hero" ref={reg('hero')} data-section="hero">
                 <img src={hero} alt="Recent Projects" className="blog-hero__image" />
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
 
@@ -146,7 +113,6 @@ const Projects = () => {
                     <div className="projects-grid">
                         {projects.map((project) => (
                             <div key={project.id} style={{
-<<<<<<< HEAD
                                 background: '#f8f9fa',
                                 border: '1px solid #eee',
                                 borderRadius: '8px',
@@ -164,22 +130,11 @@ const Projects = () => {
                                 }}
                             >
                                 <div style={{ height: '260px', overflow: 'hidden', position: 'relative' }}>
-=======
-                                background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)',
-                                borderRadius: '4px', overflow: 'hidden',
-                                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                            }}
-                                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.boxShadow = '0 20px 60px rgba(0,0,0,0.4)'; }}
-                                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
-                            >
-                                <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                                     <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
                                         onMouseEnter={e => e.target.style.transform = 'scale(1.06)'}
                                         onMouseLeave={e => e.target.style.transform = 'scale(1)'}
                                     />
                                     <div style={{ position: 'absolute', top: '1rem', left: '1rem', display: 'flex', gap: '0.5rem' }}>
-<<<<<<< HEAD
                                         <span style={{ background: 'var(--kr-red)', color: '#fff', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', padding: '0.4rem 0.8rem' }}>{project.tag}</span>
                                     </div>
                                     <div style={{ position: 'absolute', bottom: '1rem', right: '1rem', background: 'rgba(255,255,255,0.9)', color: '#333', fontSize: '0.75rem', padding: '0.4rem 0.8rem', display: 'flex', alignItems: 'center', gap: '0.4rem', borderRadius: '4px', fontWeight: 500, boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
@@ -195,23 +150,6 @@ const Projects = () => {
                                             <div key={i} style={{ flex: 1 }}>
                                                 <div style={{ fontSize: '0.7rem', color: '#999', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.3rem', fontWeight: 600 }}>{detail.label}</div>
                                                 <div style={{ fontSize: '0.85rem', color: '#333', fontWeight: 700 }}>{detail.value}</div>
-=======
-                                        <span style={{ background: 'rgba(196,30,58,0.9)', color: '#fff', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', padding: '0.3rem 0.7rem' }}>{project.tag}</span>
-                                    </div>
-                                    <div style={{ position: 'absolute', bottom: '1rem', right: '1rem', background: 'rgba(0,0,0,0.7)', color: 'rgba(255,255,255,0.8)', fontSize: '0.75rem', padding: '0.3rem 0.6rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                                        {project.location}
-                                    </div>
-                                </div>
-                                <div style={{ padding: '1.5rem' }}>
-                                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.25rem', fontWeight: 600, color: '#fff', marginBottom: '0.5rem', lineHeight: 1.3 }}>{project.title}</h3>
-                                    <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, marginBottom: '1.25rem' }}>{project.description}</p>
-                                    <div style={{ display: 'flex', gap: '1rem', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '1rem' }}>
-                                        {[{ label: 'Area', value: project.area }, { label: 'Duration', value: project.duration }, { label: 'Style', value: project.style }].map((detail, i) => (
-                                            <div key={i} style={{ flex: 1 }}>
-                                                <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.2rem' }}>{detail.label}</div>
-                                                <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)', fontWeight: 500 }}>{detail.value}</div>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                                             </div>
                                         ))}
                                     </div>
@@ -223,11 +161,7 @@ const Projects = () => {
 
                 {/* Wide image */}
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-<<<<<<< HEAD
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80" alt="Kryoss Interior Projects" />
-=======
                     <img src={transformation} alt="Kryoss Interior Projects" />
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                     <div className="blog-wide-image__caption">Every project is a story of transformation • Kryoss Interior</div>
                 </div>
 
@@ -255,11 +189,7 @@ const Projects = () => {
                 <div ref={reg('cta')} data-section="cta" className="blog-cta-section" style={{ marginBottom: '4rem' }}>
                     <h2 className="blog-cta-section__title">Ready to Start Your <em style={{ fontStyle: 'italic', color: '#c9a96e' }}>Project?</em></h2>
                     <p className="blog-cta-section__subtitle">Join 600+ happy homeowners who trusted Kryoss Interior to transform their space. Book your free consultation today.</p>
-<<<<<<< HEAD
                     <Link to="/contact-us" className="blog-cta-section__btn">Book a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
-=======
-                    <Link to="/contact" className="blog-cta-section__btn">Book a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 </div>
             </div>
         </div>
